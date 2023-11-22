@@ -1,0 +1,22 @@
+----Dependency relations----
+nmod(may bay, vn4)
+nsubj(xuat phat, may bay)
+root(ROOT, xuat phat)
+from-loc(da nang, tu)
+dobj(xuat phat, da nang)
+aux(xuat phat, khong)
+
+----Grammatical relations----
+(s1 PRED DEPART1)
+(s1 QUERY CHECK)
+(s1 LSUBJ (&(FLIGHT1 f1)(NAME f1 'vn4')))
+(s1 FROM (NAME d1 'da nang'))
+
+----Logical form----
+The f1: (&(FLIGHT1 f1)(NAME f1 'vn4')(SOURCE f1 (NAME d1 'da nang')))
+
+----Procedural semantics----
+CHECK (DTIME VN4 ĐN ?t1)
+
+----Query results----
+No

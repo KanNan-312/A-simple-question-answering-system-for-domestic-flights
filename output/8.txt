@@ -1,0 +1,22 @@
+----Dependency relations----
+query_flight(may bay, nao)
+nsubj(xuat phat, may bay)
+root(ROOT, xuat phat)
+from-loc(hai phong, tu)
+dobj(xuat phat, hai phong)
+aux(xuat phat, khong)
+
+----Grammatical relations----
+(s1 PRED DEPART1)
+(s1 QUERY CHECK)
+(s1 LSUBJ <WH f1 FLIGHT1>)
+(s1 FROM (NAME h1 'hai phong'))
+
+----Logical form----
+The f1: (&(FLIGHT1 f1)(SOURCE f1 (NAME h1 'hai phong')))
+
+----Procedural semantics----
+CHECK (FLIGHT ?f1 ?a1)(DTIME ?f1 HP ?t1)
+
+----Query results----
+No

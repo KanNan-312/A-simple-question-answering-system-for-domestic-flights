@@ -1,0 +1,28 @@
+----Dependency relations----
+query_flight(may bay, nao)
+nsubj(bay, may bay)
+root(ROOT, bay)
+from-loc(da nang, tu)
+dobj(bay, da nang)
+to-loc(ho chi minh, den)
+dobj(bay, ho chi minh)
+in-time(1:00HR, mat)
+time(bay, 1:00HR)
+query(bay, ?)
+
+----Grammatical relations----
+(s1 PRED FLY1)
+(s1 QUERY FLIGHT1)
+(s1 LSUBJ <WH f1 FLIGHT1>)
+(s1 TO (NAME h1 'ho chi minh'))
+(s1 FROM (NAME d1 'da nang'))
+(s1 IN-TIME (NAME t1 '1:00HR'))
+
+----Logical form----
+WH f1: (&(FLIGHT1 f1)(SOURCE f1 (NAME d1 'da nang'))(DEST f1 (NAME h1 'ho chi minh'))(RUN-TIME f1 (NAME t1 '1:00HR')))
+
+----Procedural semantics----
+PRINT-ALL ?f1 (FLIGHT ?f1 ?a1)(RUN-TIME ?f1 ĐN HCM 1:00HR)
+
+----Query results----
+VN2

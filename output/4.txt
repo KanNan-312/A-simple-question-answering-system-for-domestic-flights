@@ -1,0 +1,30 @@
+----Dependency relations----
+query_flight(may bay, nao)
+nsubj(xuat phat, may bay)
+root(ROOT, xuat phat)
+from-loc(ho chi minh, tu)
+dobj(xuat phat, ho chi minh)
+at-time(may gio, luc)
+query_time(xuat phat, may gio)
+query(xuat phat, ?)
+
+----Grammatical relations----
+(s1 PRED DEPART1)
+(s1 QUERY FLIGHT1)
+(s1 QUERY TIME1)
+(s1 LSUBJ <WH f1 FLIGHT1>)
+(s1 FROM (NAME h1 'ho chi minh'))
+(s1 AT-TIME <WH t1 TIME1>)
+
+----Logical form----
+WH f1,t1: (&(FLIGHT1 f1)(SOURCE f1 (NAME h1 'ho chi minh'))(DEPART-TIME f1 t1))
+
+----Procedural semantics----
+PRINT-ALL ?f1 ?t1 (FLIGHT ?f1 ?a1)(DTIME ?f1 HCM ?t1)
+
+----Query results----
+VN1 10:00HR
+VN3 4:30HR
+VN5 17:00HR
+VJ3 9:45HR
+VJ4 8:30HR

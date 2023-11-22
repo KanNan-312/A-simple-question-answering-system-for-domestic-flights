@@ -1,0 +1,24 @@
+----Dependency relations----
+query_flight(may bay, nao)
+nsubj(den, may bay)
+root(ROOT, den)
+to-loc(den, hue)
+at-time(13:30hr, luc)
+time(den, 13:30hr)
+query(den, ?)
+
+----Grammatical relations----
+(s1 PRED ARRIVE1)
+(s1 QUERY FLIGHT1)
+(s1 LSUBJ <WH f1 FLIGHT1>)
+(s1 TO (NAME h1 'hue'))
+(s1 AT-TIME (NAME t1 '13:30hr'))
+
+----Logical form----
+WH f1: (&(FLIGHT1 f1)(DEST f1 (NAME h1 'hue'))(ARRIVE-TIME f1 (NAME t1 '13:30hr')))
+
+----Procedural semantics----
+PRINT-ALL ?f1 (FLIGHT ?f1 ?a1)(ATIME ?f1 HUE 13:30HR)
+
+----Query results----
+VJ1

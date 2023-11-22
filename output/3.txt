@@ -1,0 +1,22 @@
+----Dependency relations----
+nsubj(ha canh o, may bay)
+query_flight(ha canh o, hay cho biet)
+root(ROOT, ha canh o)
+to-loc(ha canh o, hue)
+query(ha canh o, ?)
+
+----Grammatical relations----
+(s1 PRED ARRIVE1)
+(s1 QUERY FLIGHT1)
+(s1 LSUBJ <WH f1 FLIGHT1>)
+(s1 TO (NAME h1 'hue'))
+
+----Logical form----
+WH f1: (&(FLIGHT1 f1)(DEST f1 (NAME h1 'hue')))
+
+----Procedural semantics----
+PRINT-ALL ?f1 (FLIGHT ?f1 ?a1)(ATIME ?f1 HUE ?t1)
+
+----Query results----
+VN1
+VJ1

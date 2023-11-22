@@ -1,0 +1,27 @@
+----Dependency relations----
+airline(may bay, vietjet air)
+nsubj(bay, may bay)
+root(ROOT, bay)
+to-loc(thanh pho, den)
+dobj(bay, thanh pho)
+query_city(thanh pho, nao)
+query(bay, ?)
+
+----Grammatical relations----
+(s1 PRED FLY1)
+(s1 QUERY CITY1)
+(s1 LSUBJ (&(FLIGHT1 f1)(AIRLINE f1 (NAME v1 'vietjet air'))))
+(s1 TO <WH c1 CITY1>)
+
+----Logical form----
+WH c1: (&(FLIGHT1 f1)(AIRLINE f1 (NAME v1 'vietjet air'))(DEST f1 c1))
+
+----Procedural semantics----
+PRINT-ALL ?c1 (FLIGHT ?f1 VietjetAir)(ATIME ?f1 ?c1 ?t1)
+
+----Query results----
+HUE
+HN
+HP
+ĐN
+KH

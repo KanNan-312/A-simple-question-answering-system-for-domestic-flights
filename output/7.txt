@@ -1,0 +1,28 @@
+----Dependency relations----
+nmod(may bay, vj5)
+nsubj(bay, may bay)
+root(ROOT, bay)
+from-loc(ha noi, tu)
+dobj(bay, ha noi)
+to-loc(khanh hoa, den)
+dobj(bay, khanh hoa)
+in-time(may gio, mat)
+query_time(bay, may gio)
+query(bay, ?)
+
+----Grammatical relations----
+(s1 PRED FLY1)
+(s1 QUERY TIME1)
+(s1 LSUBJ (&(FLIGHT1 f1)(NAME f1 'vj5')))
+(s1 TO (NAME k1 'khanh hoa'))
+(s1 FROM (NAME h1 'ha noi'))
+(s1 IN-TIME <WH t1 TIME1>)
+
+----Logical form----
+WH t1: (&(FLIGHT1 f1)(NAME f1 'vj5')(SOURCE f1 (NAME h1 'ha noi'))(DEST f1 (NAME k1 'khanh hoa'))(RUN-TIME f1 t1))
+
+----Procedural semantics----
+PRINT-ALL ?t1 (RUN-TIME VJ5 HN KH ?t1)
+
+----Query results----
+1:45HR
